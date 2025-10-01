@@ -1,5 +1,5 @@
 context:
-  version: "0.3.2"
+  version: "0.3.3"
 
 package:
   name: openai-agents
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/o/openai-agents/openai_agents-${{ version }}.tar.gz
-    sha256: b71ac04ee9f502f1bc0f4d142407df4ec69db4442db86c4da252b4558fa90cd5
+    sha256: b016381a6890e1cb6879eb23c53c35f8c2312be1117f1cd4e4b5e2463150839f
 
 build:
   script: ${{ PYTHON }} -m pip install .
