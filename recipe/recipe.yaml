@@ -1,5 +1,5 @@
 context:
-  version: "0.3.3"
+  version: "0.4.0"
 
 package:
   name: openai-agents
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/o/openai-agents/openai_agents-${{ version }}.tar.gz
-    sha256: b016381a6890e1cb6879eb23c53c35f8c2312be1117f1cd4e4b5e2463150839f
+    sha256: 428970f77ac377d165359cfedb98df395d872b2278ded6ef73f268ff2ee05122
 
 build:
   script: ${{ PYTHON }} -m pip install .
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - openai >=1.102.0,<2
+    - openai >=2.2,<3
     - pydantic >=2.10,<3
     - griffe >=1.5.6,<2
     - typing-extensions >=4.12.2,<5
