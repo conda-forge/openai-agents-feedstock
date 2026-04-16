@@ -1,5 +1,5 @@
 context:
-  version: "0.13.6"
+  version: "0.14.1"
 
 package:
   name: openai-agents
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/o/openai-agents/openai_agents-${{ version }}.tar.gz
-    sha256: de7b3add7933ae704a5ee6e531f650d8aabb3ebaa1631f458ba39684a5ed966e
+    sha256: 7baac1b4c0a171d32c82eb6e9c207fd010e0d08dd39a5e8cd762ee27969457dc
 
 build:
   script: ${{ PYTHON }} -m pip install .
@@ -27,6 +27,7 @@ requirements:
     - typing-extensions >=4.12.2,<5
     - requests >=2.0,<3
     - types-requests >=2.0,<3
+    - websockets >=15.0,<16
     - mcp >=1.19.0,<2
 
 tests:
