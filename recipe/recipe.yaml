@@ -29,13 +29,16 @@ requirements:
     - types-requests >=2.0,<3
     - websockets >=15.0,<16
     - mcp >=1.19.0,<2
+    - httpx2
 
 tests:
   - python:
-      python_version: ${{ python_min }}.*
       imports:
         - agents
       pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A lightweight, powerful framework for multi-agent workflows
