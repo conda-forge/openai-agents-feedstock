@@ -27,8 +27,8 @@ requirements:
     - typing-extensions >=4.12.2,<5
     - requests >=2.0,<3
     - types-requests >=2.0,<3
-    - websockets >=15.0,<16
-    - mcp >=1.19.0,<2
+    - websockets >=15.0,<17
+    - mcp >=1.19.0,<3
     - httpx2
 
 tests:
